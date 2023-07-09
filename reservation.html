@@ -72,6 +72,7 @@
     function closeConfirmation() {
       var messageContainer = document.getElementById("messageContainer");
       messageContainer.style.display = "none";
+      window.history.back();
     }
 
    </script>
@@ -93,7 +94,7 @@
     </div><!-- liniecita chida -->
     <div id="messageContainer" class="messcontainer">
       <p>Reservation has been submitted. If you have any clarification to make or you want to cancel you reservation please contact the restaurant via phone call or use our message option</p>
-      <button onclick="goBack()">Close</button>
+      <button onclick="closeConfirmation()">Close</button>
     </div>
    
     
